@@ -1,5 +1,5 @@
 'use strict';
-alert(5);
+/*alert(5);
 
 let LeftBorderWidth = 1 ;
 let second = 2 ;
@@ -45,11 +45,11 @@ let answer = prompt('How old do you?');
 let ques = prompt('you are cock?');
     console.log(typeof(ques)); */
 
-console.log('arr' + ' - object');
+/*console.log('arr' + ' - object');
 console.log(9 + 'arr');
 
 /*let ques = +prompt('you are cock?');
-    console.log(typeof(ques)); */
+    console.log(typeof(ques)); 
 
 let incr = 10,
     decr = 10;
@@ -63,3 +63,25 @@ console.log('2' === 2);
 let isChecked = true;
     isFalse = false;
 console.log(isChecked || isFalse);
+*/
+
+let money = prompt('Ваш бюджет на месяц?'),
+    time = prompt('Введите дату в формате YYYY-MM-DD'),
+    AppData = {
+        budget: money,
+        expenses: {},
+        optionalExpenses: {},
+        income: [],
+        timeData: time,
+        savings: false
+    }
+
+    let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a2 = prompt("Во сколько обойдется?", ''),
+	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+    a4 = prompt("Во сколько обойдется?", '');
+    
+    AppData.expenses = {a1,a2};
+    AppData.expenses = {a3,a4};
+
+    alert(AppData.budget / 30);
